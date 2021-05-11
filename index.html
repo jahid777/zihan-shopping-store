@@ -1,0 +1,1258 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="images/logo1.jpg" type="image/icon type">
+      <title>ZIHAN-SHOPPING-STORE</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+      
+      <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+
+     <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+     <!-- navbar section -->
+   
+
+     <section id="nav-bar">
+      <a href="#top" class="scroll-top"><button class="Top-btn">Top</button></a>
+      <br>
+       <a href="#under" class="scroll-bottom"><button class="Bottom-btn">Bottom</button></a>
+      <header class="nav-bar container " >
+        <div class="brand ">
+          <div class="d-flex">
+            <img class="rounded-circle" style="height:60px;width: 60px;margin-right: 15px;" src="images/zihan.jpeg" alt="">
+            <a href="#"><h1 class="logo-text">zihan-store</h1></a>      
+          </div>
+        </div>
+        <div class="nav-list ">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a id="top" href="#home">Home</a></li>
+            <li><a  href="#about-us">About Us</a></li>
+            <li><a  href="#contact-us">Contact Us </a></li>
+          </ul>
+        </div>
+      </header>
+    </section>
+     <!-- end navbar section -->
+     <!-- heading section -->
+     <section>
+       
+       <div class=" heading" >
+        <marquee behavior="scroll" direction="left" scrollamount="17"><h1 class="heading-text" id="home">WELCOME TO ZIHAN SHOPPING STORE</h1></marquee>
+       </div>
+     </section>
+     <!-- end  heading section -->
+
+ <!-- shopping catagories dropdown -->
+ <section >
+   <div><h1 class="choose-catagories-text container">Choose Your catagories</h1></div>
+   <div class=" container dropdown-box">
+    <div class="dropdown ">
+      <button class="dropbtn"><a class="link-design" href="#mens">Mens</a></button>
+      <div class="dropdown-content text-center">
+        <a href="#shirt">Shirt</a>
+        <a href="#pant">Pant</a>
+        <a href="#shoes">Shoes </a>
+      </div>
+    </div>
+    <div class="dropdown text-center">
+      <button class="dropbtn"><a class="link-design" href="#womans">Womans</a></button>
+      <div class="dropdown-content">
+        <a href="#three-pice">Three-pice</a>
+        <a href="#shari">Shari</a>
+        <a href="#wshoes">Shoes </a>
+      </div>
+    </div>
+    <div class="dropdown text-center">
+      <button class="dropbtn"><a class="link-design" href="#others">Others</a></button>
+      <div class="dropdown-content">
+        <a href="#watch">Watch</a>
+        <a href="#sunglass">Sunglass</a>
+        <!-- <a href="#cap">cap </a> -->
+      </div>
+    </div>
+   </div>
+ </section>
+ <!-- end shopping catagories dropdown -->
+ <!-- popup section -->
+ 
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title container" id="exampleModalLabel">PLEASE PAY FIRST</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div>
+            <div class="row container">
+                <div class="col-xs-4 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h1 class="panel-title">
+                                Payment Details
+                            </h1>
+                            <div class="checkbox pull-right">
+                                <label style="color:black; font-weight: bold;font-size: 15;">
+                                    <input type="checkbox" />
+                                    Remember
+                                </label>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <form role="form">
+                            <div class="form-group">
+                                <label for="cardNumber" style="color:black; font-weight: bold;font-size:15px;">
+                                    CARD NUMBER</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
+                                        required autofocus />
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="expityMonth" style="color:black; font-weight: bold;font-size:15px;">
+                                            EXPIRY DATE</label>
+                                        <div class="col-lg-6 pl-ziro">
+                                            <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                                        </div>
+                                        <br>
+                                        <div class="col-lg-6 pl-ziro">
+                                            <input type="text" class="form-control" id="expityYear" placeholder="YY" required /></div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 col-md-5 pull-right">
+                                    <div class="form-group">
+                                        <label for="cvCode" style="color:black; font-weight: bold;font-size:15px;">
+                                            CV CODE</label>
+                                        <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
+                                    </div>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span>4200</span> Final Payment</a>
+                        </li>
+                    </ul> -->
+                    <br/>
+                  
+                    <a href="https://i.ibb.co/vDzBjrC/giphy.gif" class="btn btn-dark btn-lg btn-block" role="button">Pay</a>
+                </div>
+            </div>
+        </div>
+        
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- end popup section -->
+</div>
+
+ <!-- product section -->
+
+
+
+ <!-- end scrool top section -->
+
+ <!-- men product section  -->
+
+  <section>
+    <div>
+      <h1 class="catagories-section" id="mens" >Mens section</h1>
+    </div>
+
+    <!-- men shirt section -->
+
+    <div class="container">
+      <h1 class="shirt-section" id="shirt" >Shirt section</h1>
+    </div>
+
+    <div class="container">
+      <div class="row parent-box">
+        <div class="col-md-4 div-main-box">
+          <div class="div-box">
+          <img class="shirt-img  rounded mx-auto d-block" src="images/shirt1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Shirt-1</h5>       
+          </div>
+          <div class="card-footer d-flex container">
+           <small class="text-muted ">Price:$26</small>
+            <div>
+              <button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button>
+             
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-md-4">
+          <div class="card div-box ">
+            <img class="shirt-img  rounded mx-auto d-block" src="images/shirt2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Shirt-2</h5>          
+            </div>
+            <div class="card-footer d-flex container">
+             <small class="text-muted ">Price:$18</small>
+              <div>
+              
+
+                <button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card div-box ">
+            <img class="shirt-img  rounded mx-auto d-block" src="images/shirt3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Shirt-3</h5>       
+            </div>
+            <div class="card-footer d-flex container">
+             <small class="text-muted ">Price:$29</small>
+              <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card div-box ">
+            <img class="shirt-img  rounded mx-auto d-block" src="images/shirt4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Shirt-4</h5>        
+            </div>
+            <div class="card-footer d-flex container">
+             <small class="text-muted ">Price:$24</small>
+              <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 ">
+          <div class=" div-box ">
+          <img class="shirt-img  rounded mx-auto d-block" src="images/shirt5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Shirt-5</h5>       
+          </div>
+          <div class="card-footer d-flex container">
+           <small class="text-muted ">Price:$30</small>
+            <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 ">
+        <div class=" div-box ">
+        <img class="shirt-img  rounded mx-auto d-block" src="images/shirt6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Shirt-6</h5>       
+        </div>
+        <div class="card-footer d-flex container">
+         <small class="text-muted ">Price:$25</small>
+          <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 ">
+      <div class=" div-box ">
+      <img class="shirt-img  rounded mx-auto d-block" src="images/shirt7.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Shirt-7</h5>       
+      </div>
+      <div class="card-footer d-flex container">
+       <small class="text-muted ">Price:$27</small>
+        <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 ">
+    <div class=" div-box ">
+    <img class="shirt-img  rounded mx-auto d-block" src="images/shirt8.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center">Shirt-8</h5>       
+    </div>
+    <div class="card-footer d-flex container">
+     <small class="text-muted ">Price:$22</small>
+      <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 ">
+  <div class=" div-box ">
+  <img class="shirt-img  rounded mx-auto d-block" src="images/shirt9.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">Shirt-9</h5>       
+  </div>
+  <div class="card-footer d-flex container">
+   <small class="text-muted ">Price:$18</small>
+    <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+  </div>
+</div>
+</div>
+
+  </div>
+    </div>
+
+    <div class="container mb-5"><a href="https://www.myntra.com/shirts"><button class="buy-btn">See more</button> </a></div>
+
+
+    <!-- men pant section -->
+
+    <div class="container">
+      <h1 class="shirt-section "id="pant" >Pant section</h1>
+    </div>
+
+    <div class="container">
+      <div class="row parent-box">
+        <div class="col-md-4 div-main-box">
+          <div class="div-box">
+          <img class="shirt-img  rounded mx-auto d-block" src="images/pant1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Pant-1</h5>       
+          </div>
+          <div class="card-footer d-flex container">
+           <small class="text-muted ">Price:$16</small>
+            <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-md-4">
+          <div class="card div-box ">
+            <img class="shirt-img  rounded mx-auto d-block" src="images/pant2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Pant-2</h5>          
+            </div>
+            <div class="card-footer d-flex container">
+             <small class="text-muted ">Price:$18</small>
+              <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card div-box ">
+            <img class="shirt-img  rounded mx-auto d-block" src="images/pant3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Pant-3</h5>       
+            </div>
+            <div class="card-footer d-flex container">
+             <small class="text-muted ">Price:$26</small>
+              <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card div-box ">
+            <img class="shirt-img  rounded mx-auto d-block" src="images/pant4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Pant-4</h5>        
+            </div>
+            <div class="card-footer d-flex container">
+             <small class="text-muted ">Price:$29</small>
+              <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 ">
+          <div class=" div-box ">
+          <img class="shirt-img  rounded mx-auto d-block" src="images/pant5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Pant-5</h5>       
+          </div>
+          <div class="card-footer d-flex container">
+           <small class="text-muted ">Price:$18</small>
+            <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 ">
+        <div class=" div-box ">
+        <img class="shirt-img  rounded mx-auto d-block" src="images/pant6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Pant-6</h5>       
+        </div>
+        <div class="card-footer d-flex container">
+         <small class="text-muted ">Price:$24</small>
+          <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 ">
+      <div class=" div-box ">
+      <img class="shirt-img  rounded mx-auto d-block" src="images/pant7.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Pant-7</h5>       
+      </div>
+      <div class="card-footer d-flex container">
+       <small class="text-muted ">Price:$32</small>
+        <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 ">
+    <div class=" div-box ">
+    <img class="shirt-img  rounded mx-auto d-block" src="images/pant8.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center">Pant-8</h5>       
+    </div>
+    <div class="card-footer d-flex container">
+     <small class="text-muted ">Price:$23</small>
+      <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 ">
+  <div class=" div-box ">
+  <img class="shirt-img  rounded mx-auto d-block" src="images/pant9.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">Pant-9</h5>       
+  </div>
+  <div class="card-footer d-flex container">
+   <small class="text-muted ">Price:$28</small>
+    <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+  </div>
+</div>
+</div>
+
+  </div>
+    </div>
+    <div class="container mb-5"><a href="https://www.othoba.com/mens-pant"><button class="buy-btn">See more</button> </a></div>
+
+ <!-- men shoes section -->
+ <div class="container">
+  <h1 class="shirt-section "id="shoes" >Shoes section</h1>
+</div>
+
+<div class="container">
+  <div class="row parent-box">
+    <div class="col-md-4 div-main-box">
+      <div class="div-box">
+      <img class="shirt-img  rounded mx-auto d-block" src="images/shoes1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Shoes-1</h5>       
+      </div>
+      <div class="card-footer d-flex container">
+       <small class="text-muted ">Price:$32</small>
+        <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-md-4">
+      <div class="card div-box ">
+        <img class="shirt-img  rounded mx-auto d-block" src="images/shoes2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Shoes-2</h5>          
+        </div>
+        <div class="card-footer d-flex container">
+         <small class="text-muted ">Price:$26</small>
+          <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card div-box ">
+        <img class="shirt-img  rounded mx-auto d-block" src="images/shoes3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Shoes-3</h5>       
+        </div>
+        <div class="card-footer d-flex container">
+         <small class="text-muted ">Price:$35</small>
+          <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card div-box ">
+        <img class="shirt-img  rounded mx-auto d-block" src="images/shoes4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Shoes-4</h5>        
+        </div>
+        <div class="card-footer d-flex container">
+         <small class="text-muted ">Price:$29</small>
+          <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 ">
+      <div class=" div-box ">
+      <img class="shirt-img  rounded mx-auto d-block" src="images/shoes5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Shoes-5</h5>       
+      </div>
+      <div class="card-footer d-flex container">
+       <small class="text-muted ">Price:$24</small>
+        <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 ">
+    <div class=" div-box ">
+    <img class="shirt-img  rounded mx-auto d-block" src="images/shoes6.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center">Shoes-6</h5>       
+    </div>
+    <div class="card-footer d-flex container">
+     <small class="text-muted ">Price:$29</small>
+      <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4 ">
+  <div class=" div-box ">
+  <img class="shirt-img  rounded mx-auto d-block" src="images/shoes7.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">Shoes-7</h5>       
+  </div>
+  <div class="card-footer d-flex container">
+   <small class="text-muted ">Price:$19</small>
+    <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+  </div>
+</div>
+</div>
+
+<div class="col-md-4 ">
+<div class=" div-box ">
+<img class="shirt-img  rounded mx-auto d-block" src="images/shoes8.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title text-center">Shoes-8</h5>       
+</div>
+<div class="card-footer d-flex container">
+ <small class="text-muted ">Price:$26</small>
+  <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 ">
+<div class=" div-box ">
+<img class="shirt-img  rounded mx-auto d-block" src="images/shoes9.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title text-center">Shoes-9</h5>       
+</div>
+<div class="card-footer d-flex container">
+<small class="text-muted ">Price:$33</small>
+<div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="container mb-5"><a href="https://vessi.com/"><button class="buy-btn">See more</button> </a></div>
+
+  </section>
+
+ <!-- end men product section  -->
+
+ <!-- women section -->
+
+ <section>
+  <div>
+    <h1 class="catagories-section" id="womans" >Womans section</h1>
+  </div>
+
+  <!-- women Three-pice section -->
+
+  <div class="container">
+    <h1 class="shirt-section" id="three-pice" >Three-pice</h1>
+  </div>
+
+  <div class="container">
+    <div class="row parent-box">
+      <div class="col-md-4 div-main-box">
+        <div class="div-box">
+        <img class="shirt-img  rounded mx-auto d-block" src="images/three-pice1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Three-pice-1</h5>       
+        </div>
+        <div class="card-footer d-flex container">
+         <small class="text-muted ">Price:$35</small>
+          <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+        </div>
+      </div>
+    </div>
+
+      <div class="col-md-4">
+        <div class="card div-box ">
+          <img class="shirt-img  rounded mx-auto d-block" src="images/three-pice2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Three-pice-2</h5>          
+          </div>
+          <div class="card-footer d-flex container">
+           <small class="text-muted ">Price:$26</small>
+            <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card div-box ">
+          <img class="shirt-img  rounded mx-auto d-block" src="images/three-pice3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Three-pice-3</h5>       
+          </div>
+          <div class="card-footer d-flex container">
+           <small class="text-muted ">Price:$22</small>
+            <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card div-box ">
+          <img class="shirt-img  rounded mx-auto d-block" src="images/three-pice4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Three-pice-4</h5>        
+          </div>
+          <div class="card-footer d-flex container">
+           <small class="text-muted ">Price:$24</small>
+            <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 ">
+        <div class=" div-box ">
+        <img class="shirt-img  rounded mx-auto d-block" src="images/three-pice5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Three-pice-5</h5>       
+        </div>
+        <div class="card-footer d-flex container">
+         <small class="text-muted ">Price:$32</small>
+          <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 ">
+      <div class=" div-box ">
+      <img class="shirt-img  rounded mx-auto d-block" src="images/three-pice6.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Three-pice-6</h5>       
+      </div>
+      <div class="card-footer d-flex container">
+       <small class="text-muted ">Price:$25</small>
+        <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 ">
+    <div class=" div-box ">
+    <img class="shirt-img  rounded mx-auto d-block" src="images/three-pice7.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center">Three-pice-7</h5>       
+    </div>
+    <div class="card-footer d-flex container">
+     <small class="text-muted ">Price:$21</small>
+      <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 ">
+  <div class=" div-box ">
+  <img class="shirt-img  rounded mx-auto d-block" src="images/three-pice8.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">Three-pice-8</h5>       
+  </div>
+  <div class="card-footer d-flex container">
+   <small class="text-muted ">Price:$24</small>
+    <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+  </div>
+</div>
+</div>
+
+<div class="col-md-4 ">
+<div class=" div-box ">
+<img class="shirt-img  rounded mx-auto d-block" src="images/three-pice9.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title text-center">Three-pice-9</h5>       
+</div>
+<div class="card-footer d-flex container">
+ <small class="text-muted ">Price:$32</small>
+  <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+</div>
+</div>
+</div>
+
+</div>
+  </div>
+
+  <div class="container mb-5"><a href="https://ajkerdeal.com/en/category/womens-fashion-salwar-kameez-original-collection"><button class="buy-btn">See more</button> </a></div>
+
+
+  <!-- womans sharri section -->
+
+  <div class="container">
+    <h1 class="shirt-section "id="shari" >Shari section</h1>
+  </div>
+
+  <div class="container">
+    <div class="row parent-box">
+      <div class="col-md-4 div-main-box">
+        <div class="div-box">
+        <img class="shirt-img  rounded mx-auto d-block" src="images/sharri1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Shari-1</h5>       
+        </div>
+        <div class="card-footer d-flex container">
+         <small class="text-muted ">Price:$16</small>
+          <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+        </div>
+      </div>
+    </div>
+
+      <div class="col-md-4">
+        <div class="card div-box ">
+          <img class="shirt-img  rounded mx-auto d-block" src="images/sharri2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Shari-2</h5>          
+          </div>
+          <div class="card-footer d-flex container">
+           <small class="text-muted ">Price:$25</small>
+            <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card div-box ">
+          <img class="shirt-img  rounded mx-auto d-block" src="images/sharri3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Shari-3</h5>       
+          </div>
+          <div class="card-footer d-flex container">
+           <small class="text-muted ">Price:$28</small>
+            <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card div-box ">
+          <img class="shirt-img  rounded mx-auto d-block" src="images/sharri4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Shari-4</h5>        
+          </div>
+          <div class="card-footer d-flex container">
+           <small class="text-muted ">Price:$29</small>
+            <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 ">
+        <div class=" div-box ">
+        <img class="shirt-img  rounded mx-auto d-block" src="images/sharri5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Shari-5</h5>       
+        </div>
+        <div class="card-footer d-flex container">
+         <small class="text-muted ">Price:$22</small>
+          <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 ">
+      <div class=" div-box ">
+      <img class="shirt-img  rounded mx-auto d-block" src="images/sharri6.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Shari-6</h5>       
+      </div>
+      <div class="card-footer d-flex container">
+       <small class="text-muted ">Price:$24</small>
+        <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 ">
+    <div class=" div-box ">
+    <img class="shirt-img  rounded mx-auto d-block" src="images/sharri7.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center">Shari-7</h5>       
+    </div>
+    <div class="card-footer d-flex container">
+     <small class="text-muted ">Price:$32</small>
+      <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 ">
+  <div class=" div-box ">
+  <img class="shirt-img  rounded mx-auto d-block" src="images/sharri8.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">Shari-8</h5>       
+  </div>
+  <div class="card-footer d-flex container">
+   <small class="text-muted ">Price:$23</small>
+    <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+  </div>
+</div>
+</div>
+
+<div class="col-md-4 ">
+<div class=" div-box ">
+<img class="shirt-img  rounded mx-auto d-block" src="images/sharri9.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title text-center">Shari-9</h5>       
+</div>
+<div class="card-footer d-flex container">
+ <small class="text-muted ">Price:$22</small>
+  <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+</div>
+</div>
+</div>
+
+</div>
+  </div>
+  <div class="container mb-5"><a href="https://www.mirraw.com/store/sarees"><button class="buy-btn">See more</button> </a></div>
+
+<!-- womans shoes section -->
+<div class="container">
+<h1 class="shirt-section "id="wshoes" > Womans Shoes</h1>
+</div>
+
+<div class="container">
+<div class="row parent-box">
+  <div class="col-md-4 div-main-box">
+    <div class="div-box">
+    <img class="shirt-img  rounded mx-auto d-block" src="images/wshoes1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center">Shoes-1</h5>       
+    </div>
+    <div class="card-footer d-flex container">
+     <small class="text-muted ">Price:$28</small>
+      <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+    </div>
+  </div>
+</div>
+
+  <div class="col-md-4">
+    <div class="card div-box ">
+      <img class="shirt-img  rounded mx-auto d-block" src="images/wshoes2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Shoes-2</h5>          
+      </div>
+      <div class="card-footer d-flex container">
+       <small class="text-muted ">Price:$25</small>
+        <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card div-box ">
+      <img class="shirt-img  rounded mx-auto d-block" src="images/wshoes3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Shoes-3</h5>       
+      </div>
+      <div class="card-footer d-flex container">
+       <small class="text-muted ">Price:$30</small>
+        <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <div class="card div-box ">
+      <img class="shirt-img  rounded mx-auto d-block" src="images/wshoes4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Shoes-4</h5>        
+      </div>
+      <div class="card-footer d-flex container">
+       <small class="text-muted ">Price:$28</small>
+        <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 ">
+    <div class=" div-box ">
+    <img class="shirt-img  rounded mx-auto d-block" src="images/wshoes5.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center">Shoes-5</h5>       
+    </div>
+    <div class="card-footer d-flex container">
+     <small class="text-muted ">Price:$32</small>
+      <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 ">
+  <div class=" div-box ">
+  <img class="shirt-img  rounded mx-auto d-block" src="images/wshoes6.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">Shoes-6</h5>       
+  </div>
+  <div class="card-footer d-flex container">
+   <small class="text-muted ">Price:$23</small>
+    <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+  </div>
+</div>
+</div>
+<div class="col-md-4 ">
+<div class=" div-box ">
+<img class="shirt-img  rounded mx-auto d-block" src="images/wshoes7.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title text-center">Shoes-7</h5>       
+</div>
+<div class="card-footer d-flex container">
+ <small class="text-muted ">Price:$24</small>
+  <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 ">
+<div class=" div-box ">
+<img class="shirt-img  rounded mx-auto d-block" src="images/wshoes8.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title text-center">Shoes-8</h5>       
+</div>
+<div class="card-footer d-flex container">
+<small class="text-muted ">Price:$21</small>
+<div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 ">
+<div class=" div-box ">
+<img class="shirt-img  rounded mx-auto d-block" src="images/wshoes9.jpg" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title text-center">Shoes-9</h5>       
+</div>
+<div class="card-footer d-flex container">
+<small class="text-muted ">Price:$33</small>
+<div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="container mb-5"><a href="https://www.othoba.com/womens-footwear"><button class="buy-btn">See more</button> </a></div>
+
+</section>
+
+ <!-- end women section -->
+
+  <!-- other section -->
+
+  <section>
+    <div>
+      <h1 class="catagories-section" id="others" >Others section</h1>
+    </div>
+  
+    <!-- watch section -->
+  
+    <div class="container">
+      <h1 class="shirt-section" id="watch" >Watch</h1>
+    </div>
+
+    <div class="container">
+      <div class="row parent-box">
+        <div class="col-md-4 div-main-box">
+          <div class="div-box">
+          <img class="shirt-img  rounded mx-auto d-block" src="images/watch1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Watch-1</h5>       
+          </div>
+          <div class="card-footer d-flex container">
+           <small class="text-muted ">Price:$20</small>
+            <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+          </div>
+        </div>
+      </div>
+      
+        <div class="col-md-4">
+          <div class="card div-box ">
+            <img class="shirt-img  rounded mx-auto d-block" src="images/watch2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Watch-2</h5>          
+            </div>
+            <div class="card-footer d-flex container">
+             <small class="text-muted ">Price:$25</small>
+              <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4">
+          <div class="card div-box ">
+            <img class="shirt-img  rounded mx-auto d-block" src="images/watch3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Watch-3</h5>       
+            </div>
+            <div class="card-footer d-flex container">
+             <small class="text-muted ">Price:$28</small>
+              <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card div-box ">
+            <img class="shirt-img  rounded mx-auto d-block" src="images/watch4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Watch-4</h5>        
+            </div>
+            <div class="card-footer d-flex container">
+             <small class="text-muted ">Price:$24</small>
+              <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 ">
+          <div class=" div-box ">
+          <img class="shirt-img  rounded mx-auto d-block" src="images/watch5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Watch-5</h5>       
+          </div>
+          <div class="card-footer d-flex container">
+           <small class="text-muted ">Price:$30</small>
+            <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 ">
+        <div class=" div-box ">
+        <img class="shirt-img  rounded mx-auto d-block" src="images/watch6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Watch-6</h5>       
+        </div>
+        <div class="card-footer d-flex container">
+         <small class="text-muted ">Price:$23</small>
+          <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+        </div>
+      </div>
+      </div>
+      
+      </div>
+      </div>
+      <div class="container mb-5"><a href="https://festina.com/en-GB"><button class="buy-btn">See more</button> </a></div>
+      <!-- end watch section -->
+
+       <!-- sunglass section -->
+  
+    <div class="container">
+      <h1 class="shirt-section" id="sunglass" >Sunglass</h1>
+    </div>
+
+    <div class="container">
+      <div class="row parent-box">
+        <div class="col-md-4 div-main-box">
+          <div class="div-box">
+          <img class="shirt-img  rounded mx-auto d-block" src="images/sunnglass1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sunglass-1</h5>       
+          </div>
+          <div class="card-footer d-flex container">
+           <small class="text-muted ">Price:$3</small>
+            <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+          </div>
+        </div>
+      </div>
+      
+        <div class="col-md-4">
+          <div class="card div-box ">
+            <img class="shirt-img  rounded mx-auto d-block" src="images/sunnglass2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Sunglass-2</h5>          
+            </div>
+            <div class="card-footer d-flex container">
+             <small class="text-muted ">Price:$5</small>
+              <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4">
+          <div class="card div-box ">
+            <img class="shirt-img  rounded mx-auto d-block" src="images/sunnglass3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Sunglass-3</h5>       
+            </div>
+            <div class="card-footer d-flex container">
+             <small class="text-muted ">Price:$8</small>
+              <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card div-box ">
+            <img class="shirt-img  rounded mx-auto d-block" src="images/sunnglass4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Sunglass-4</h5>        
+            </div>
+            <div class="card-footer d-flex container">
+             <small class="text-muted ">Price:$4</small>
+              <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 ">
+          <div class=" div-box ">
+          <img class="shirt-img  rounded mx-auto d-block" src="images/sunnglass5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sunglass-5</h5>       
+          </div>
+          <div class="card-footer d-flex container">
+           <small class="text-muted ">Price:$5</small>
+            <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 ">
+        <div class=" div-box ">
+        <img class="shirt-img  rounded mx-auto d-block" src="images/sunnglass6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Sunglass-6</h5>       
+        </div>
+        <div class="card-footer d-flex container">
+         <small class="text-muted ">Price:$4</small>
+          <div><button type="button" class="buy-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">BUY NOW</button></div>
+        </div>
+      </div>
+      </div>
+      
+      </div>
+      </div>
+      <div class="container mb-5"><a href="https://www.google.com/search?q=man+and+womens+sunglass&rlz=1C1CHBF_enBD924BD924&sxsrf=ALeKk009DrutNSW9YToB0xWSfMg9Utp0PA:1620672945747&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjYnumZ5b_wAhVBVH0KHZMSBiUQ_AUoAXoECAEQAw&biw=1366&bih=568"><button class="buy-btn">See more</button> </a></div>
+   <!-- end sunglass section -->
+  </section>
+  <!-- end other section -->
+
+ <!-- end product section -->
+
+ <!-- about section  -->
+ <main id="about-us">
+  <h1 style="font-weight: bold;" class="container mb-5 mt-5">ABOUT US</h1>
+ 
+  <div  class="container" style="border:1px solid gray; box-shadow: 5px 5px 4px;" >
+   
+   <div class="row mt-5 mb-5">
+     <div class="col-md-4">
+ <img  class="img-thumbnail " src="images/zihan.jpeg" alt="">
+     </div>
+ 
+     <div class="col-md-8">
+       <h2 class="text-center">ZIHAN-SHOPPING store announces issuance of $1B Sustainability Bond</h2>
+       <br> 
+        <h5 style="text-align:justify;">     
+         ZIHAN-SHOPPING store is issuing a sustainability bond to fund ongoing and new sustainability projects that advance people and the planet. This bond is part of a new Sustainable Bond Framework, which details how we are investing to drive a positive impact on society and to help advance new technologies that decarbonize and preserve the natural world.
+         
+ This is part of a new Sustainable Bond Framework, which details how we are investing to drive a positive impact on society and to help advance new technologies that decarbonize and preserve the natural world. At Amazon, we are committed to using our scale for good. Amazon continues to stimulate investment in the development of green technologies and low carbon products and services that will enable companies of all sizes to decarbonize their operations.
+ 
+ To date, our company commitments include:
+ 
+ Net Zero Carbon by 2040: Deploying our technology and people to reach net-zero carbon across Amazon by 2040, one decade ahead of the Paris Agreement.
+ 100,000 Electric Delivery Vehicles: Amazon placed an order for 100,000 electric delivery vehicles with Rivian, the largest order ever of electric delivery vehicles. We also partnered to order EVs from Mahindra Electric and Mercedes Benz.
+ 100% Renewable Energy: Amazon has committed to powering our operations with 100% renewable energy by 2030, and we’re on a path to achieve this five years early, by 2025.
+        </h5>
+     </div>
+   </div>
+ </div>
+ </main>
+<!-- End about section  -->
+
+
+
+      <!-- Footer section  -->
+      <footer id="contact-us" class="footer ">
+        <div class="footer-contact">
+          <h1 class="footer-contact-heading"><span id="under">Contact With Me</span></h1>
+          <p class="footer-contact-info">Email:islamzihan43@gamil.com</p>
+          <p class="footer-contact-info">Mobile:01785979409</p>
+        </div>
+        <div class="footer-social-follow">
+          <h1 class="footer-social-follow-heading">Follow Me</h1>
+          <div class="footer-social-icon">
+            <!-- <a href="https://www.facebook.com/zihan.islam.5015"><i class="fab fa-facebook"> <img style="height:80px;margin-left:20px; border-radius: 30px;" src="images/fbLogo1.jpg" alt=""> </i></a> -->
+           
+              <a class="fb-icon" href="https://www.facebook.com/zihan.islam.5015"><i class="fab fa-facebook"></i></a>
+
+            <a class="fb-icon" href="https://www.behance.net/"><i class="fab fa-behance-square"></i></a>
+            <a class="fb-icon" href="https://dribbble.com/"><i class="fab fa-dribbble-square"></i></a>
+          </div>
+        </div>
+      </footer>
+
+      <!-- End Footer section  -->
+      <script src="./app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+      
+
+
+
+<!-- Start of Async Drift Code -->
+<script>
+  "use strict";
+  
+  !function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+      t.factory = function(e) {
+        return function() {
+          var n = Array.prototype.slice.call(arguments);
+          return n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+        var i = document.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(o, i);
+      };
+    }
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('x7444cmpg6hi');
+  </script>
+  <!-- End of Async Drift Code -->
+    </body>
+    </html>
